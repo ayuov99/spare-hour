@@ -1,7 +1,4 @@
-/* a4stylesheet.css
-   A4: Intro CSS Fill-in Template
-   Completed A4 stylesheet, adapted from the course fill-in template.
-*/
+/* styles.css */
 
 
 
@@ -33,7 +30,7 @@ a:hover { text-decoration: underline; }
 }
 
 .header-inner {
-  /* A: completed */
+  /* A */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -47,7 +44,7 @@ a:hover { text-decoration: underline; }
 }
 
 .brand .dot {
-  /* B: completed */
+  /* B */
   color: #3a88a8;
 }
 
@@ -66,25 +63,23 @@ a:hover { text-decoration: underline; }
 
 /* ===== Hero ===== */
 .hero {
-  /* C: completed */
+  /* C */
   background-image: linear-gradient(rgba(246, 242, 233, 0.88), rgba(246, 242, 233, 0.88)), url("images/desk-hero.svg");
   background-size: cover;
   background-position: center;
   min-height: 360px;
-  /* My image:
-     https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=60
-  */
+  
 }
 
 .hero-content {
-  /* D: completed */
+  /* D */
   text-align: center;
   padding: 72px 0;
 }
 
 .hero h1 {
   margin: 0;
-  /* E: completed */
+  /* E */
   font-size: 48px;
   text-transform: uppercase;
   line-height: 1.12;
@@ -95,7 +90,7 @@ a:hover { text-decoration: underline; }
 
 .hero-subhead {
   margin: 6px 0 22px;
-  /* F: completed */
+  /* F */
   font-size: 22px;
   color: #4c6259;
   max-width: 640px;
@@ -116,14 +111,14 @@ a:hover { text-decoration: underline; }
 }
 
 .btn-dark {
-  /* G: completed */
+  /* G */
   background: #283B38;
   color: #fff;
   border: 2px solid #283B38;
 }
 
 .btn-outline {
-  /* H: completed */
+  /* H */
   border: 2px solid #3a88a8;
   color: #285f76;
   background: transparent;
@@ -135,13 +130,13 @@ a:hover { text-decoration: underline; }
 }
 
 .features-grid {
-  /* I: completed */
+  /* I */
   display: flex;
   gap: 26px;
 }
 
 .feature {
-  /* J: completed */
+  /* J */
   flex: 1;
   min-width: 0;
   text-align: center;
@@ -200,13 +195,13 @@ a:hover { text-decoration: underline; }
 }
 
 .secondary-grid {
-  /* K: completed */
+  /* K */
   display: flex;
   gap: 26px;
 }
 
 .card {
-  /* L: completed */
+  /* L */
   flex: 1;
   min-width: 0;
   border: 1px solid #cdd8cf;
@@ -234,12 +229,12 @@ a:hover { text-decoration: underline; }
 
 .card-image {
   min-height: 160px;
-  /* M: completed */
+  /* M */
   background-size: cover;
   background-position: center;
 }
 
-/* Optional images (already provided) */
+/* Card images */
 .img-a {
   background-image: url("images/parts-icon.svg");
   background-color: #D9E4DB;
@@ -256,7 +251,7 @@ a:hover { text-decoration: underline; }
 }
 
 .cta-inner {
-  /* N: completed */
+  /* N */
   text-align: center;
 }
 
@@ -272,7 +267,7 @@ a:hover { text-decoration: underline; }
 }
 
 .footer-inner {
-  /* O: completed */
+  /* O */
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -308,7 +303,7 @@ a:hover { text-decoration: underline; }
 
 
 
-/* Adapt the template to the original A3 content. */
+/* Additional styles */
 html { scroll-behavior: smooth; }
 section { scroll-margin-top: 20px; }
 img { max-width: 100%; height: auto; }
