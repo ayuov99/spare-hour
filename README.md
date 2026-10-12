@@ -1,8 +1,8 @@
 # Spare Hour
 
-LIS 351 A4 — a styled one-page website by Abdulrahman Saeedy.
+LIS 351 A4 a styled one-page website.
 
-Open `index.html` to view the site locally. The stylesheet starts with the course template and completes sections A–O. Original custom SVG illustrations and A3 content are retained.
+Open `index.html` to view the site locally. 
 
 ## Publish
 
