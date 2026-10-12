@@ -1,0 +1,361 @@
+/* a4stylesheet.css
+   A4: Intro CSS Fill-in Template
+   Completed A4 stylesheet, adapted from the course fill-in template.
+*/
+
+
+
+
+
+/* ===== Base styles (mostly done) ===== */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #283B38;
+  background: #fff;
+}
+
+a { color: inherit; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container {
+  width: min(1000px, 92%);
+  margin: 0 auto;
+}
+
+/* ===== Header ===== */
+.site-header {
+  border-bottom: 1px solid #eee;
+  background: #fff;
+}
+
+.header-inner {
+  /* A: completed */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 20px 0;
+}
+
+.brand {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.brand .dot {
+  /* B: completed */
+  color: #3a88a8;
+}
+
+.site-nav a {
+  margin-left: 18px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: #444;
+}
+
+
+
+
+
+
+/* ===== Hero ===== */
+.hero {
+  /* C: completed */
+  background-image: linear-gradient(rgba(246, 242, 233, 0.88), rgba(246, 242, 233, 0.88)), url("images/desk-hero.svg");
+  background-size: cover;
+  background-position: center;
+  min-height: 360px;
+  /* My image:
+     https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=60
+  */
+}
+
+.hero-content {
+  /* D: completed */
+  text-align: center;
+  padding: 72px 0;
+}
+
+.hero h1 {
+  margin: 0;
+  /* E: completed */
+  font-size: 48px;
+  text-transform: uppercase;
+  line-height: 1.12;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #283B38;
+}
+
+.hero-subhead {
+  margin: 6px 0 22px;
+  /* F: completed */
+  font-size: 22px;
+  color: #4c6259;
+  max-width: 640px;
+  margin: 20px auto 28px;
+}
+
+
+
+
+
+
+/* ===== Buttons ===== */
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.btn-dark {
+  /* G: completed */
+  background: #283B38;
+  color: #fff;
+  border: 2px solid #283B38;
+}
+
+.btn-outline {
+  /* H: completed */
+  border: 2px solid #3a88a8;
+  color: #285f76;
+  background: transparent;
+}
+
+/* ===== Features (3 columns) ===== */
+.features {
+  padding: 42px 0;
+}
+
+.features-grid {
+  /* I: completed */
+  display: flex;
+  gap: 26px;
+}
+
+.feature {
+  /* J: completed */
+  flex: 1;
+  min-width: 0;
+  text-align: center;
+}
+
+.icon {
+  width: 56px;
+  height: 56px;
+  border: 2px solid #ddd;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 12px;
+  color: #666;
+  font-size: 22px;
+}
+
+/* ===== Featured content ===== */
+.featured {
+  padding: 42px 0 36px;
+  background: #F6F2E9;
+}
+
+.section-title {
+  text-align: center;
+  margin: 0;
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.section-lede {
+  text-align: center;
+  max-width: 680px;
+  margin: 10px auto 22px;
+  color: #666;
+  font-size: 13px;
+}
+
+.media {
+  background: #eaeaea;
+  border: 1px solid #ddd;
+  height: 260px;
+  display: grid;
+  place-items: center;
+}
+
+
+
+
+
+
+/* ===== Secondary content (2 cards) ===== */
+.secondary {
+  padding: 34px 0 44px;
+}
+
+.secondary-grid {
+  /* K: completed */
+  display: flex;
+  gap: 26px;
+}
+
+.card {
+  /* L: completed */
+  flex: 1;
+  min-width: 0;
+  border: 1px solid #cdd8cf;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card-text {
+  padding: 18px;
+}
+
+.card-text h3 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.card-text p {
+  margin: 0 0 14px;
+  color: #666;
+  font-size: 13px;
+}
+
+.card-image {
+  min-height: 160px;
+  /* M: completed */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Optional images (already provided) */
+.img-a {
+  background-image: url("images/parts-icon.svg");
+  background-color: #D9E4DB;
+}
+.img-b {
+  background-image: url("images/notebook-icon.svg");
+  background-color: #F6F2E9;
+}
+
+/* ===== CTA ===== */
+.cta {
+  background: #F6F2E9;
+  padding: 42px 0;
+}
+
+.cta-inner {
+  /* N: completed */
+  text-align: center;
+}
+
+
+
+
+
+/* ===== Footer ===== */
+.site-footer {
+  background: #fafafa;
+  border-top: 1px solid #eee;
+  padding: 24px 0;
+}
+
+.footer-inner {
+  /* O: completed */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.footer-left {
+  max-width: 360px;
+  color: #666;
+  font-size: 12px;
+}
+
+.footer-left a { color: #3a88a8; }
+
+.footer-cols {
+  display: flex;
+  gap: 28px;
+}
+
+.footer-col h4 {
+  margin: 0 0 8px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.footer-col a {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  margin: 6px 0;
+}
+
+
+
+/* Adapt the template to the original A3 content. */
+html { scroll-behavior: smooth; }
+section { scroll-margin-top: 20px; }
+img { max-width: 100%; height: auto; }
+.brand { margin: 0; white-space: nowrap; color: #355C4D; }
+.site-nav ul, .footer-col { list-style: none; padding: 0; margin: 0; }
+.site-nav ul { display: flex; flex-wrap: wrap; gap: 18px; }
+.site-nav a { margin-left: 0; }
+.btn { font-weight: 700; }
+.btn:hover { text-decoration: none; }
+.btn-dark:hover { background: #355C4D; border-color: #355C4D; }
+.btn-outline:hover { background: #285f76; border-color: #285f76; color: #fff; }
+a:focus-visible { outline: 3px solid #B45C3D; outline-offset: 5px; }
+.features-grid { margin-top: 32px; }
+.feature img { margin-bottom: 6px; }
+.feature h3 { font-size: 18px; margin: 8px 0; color: #355C4D; }
+.feature p { font-size: 15px; margin: 0; color: #52645c; }
+.section-title { font-size: 22px; color: #355C4D; }
+.section-lede { font-size: 16px; color: #52645c; }
+.timer-figure { max-width: 760px; margin: 0 auto; }
+.media { display: block; width: 100%; height: auto; border-color: #cdd8cf; background: #F6F2E9; }
+figcaption { font-size: 13px; color: #52645c; text-align: center; margin-top: 10px; }
+.build-steps { max-width: 680px; margin: 28px auto 0; }
+.build-steps h3 { color: #355C4D; margin-bottom: 10px; }
+.build-steps ol { padding-left: 24px; }
+.build-steps li { margin: 8px 0; }
+.secondary-grid { margin-top: 28px; }
+.card { grid-template-columns: 3fr 2fr; }
+.card-text { padding: 24px; }
+.card-text h3 { line-height: 1.6; color: #355C4D; }
+.card-text p { font-size: 14px; margin-bottom: 0; color: #52645c; }
+.cta h2 { margin: 0; font-size: 30px; color: #355C4D; }
+.cta p { max-width: 560px; margin: 14px auto 24px; }
+.footer-left { margin: 0; }
+.footer-col a { margin-top: 0; }
+@media (max-width: 760px) {
+  .header-inner { flex-direction: column; gap: 14px; }
+  .site-nav ul { justify-content: center; gap: 10px 18px; }
+  .hero-content { padding: 54px 0; }
+  .hero h1 { font-size: 34px; }
+  .hero-subhead { font-size: 19px; }
+  .features-grid, .secondary-grid { flex-direction: column; }
+  .feature { max-width: 440px; margin: 0 auto; }
+  .footer-inner { flex-direction: column; }
+}
+@media (max-width: 400px) {
+  .hero h1 { font-size: 29px; }
+  .card { grid-template-columns: 1fr; }
+  .card-image { min-height: 120px; background-size: contain; background-repeat: no-repeat; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
